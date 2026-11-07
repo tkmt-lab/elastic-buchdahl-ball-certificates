@@ -1,0 +1,11 @@
+{
+  "level": "L1 statement only",
+  "formal_proof": false,
+  "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "runtime_used_read_only": true,
+  "statement_sha256": "a7d8d7376aa1b48d470100e71e9d785a8f09bd88dd37356588fc98b5d3acb8dc",
+  "mathlib_manifest_sha256": "d7a73ee540d4ab15677db707b30c584a3720fd3eb3427d3e811b1b063118ad4e",
+  "returncode": 0,
+  "stdout": "ElasticBall.MainClaim : Prop\n",
+  "stderr": ""
+}

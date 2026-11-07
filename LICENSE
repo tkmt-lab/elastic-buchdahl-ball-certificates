@@ -1,0 +1,5 @@
+Copyright 2026 Tatsuhiko Takimoto.
+
+Original Python and Lean code and CI configuration: Apache License 2.0 (Apache-2.0.txt).
+Original article, documentation and generated certificate data: Creative Commons Attribution 4.0 International (CC-BY-4.0.txt).
+Python, Lean, mathlib, Tectonic, TeX fonts and Poppler are external dependencies, not vendored; their own licenses apply. External papers are linked, not redistributed. This notice does not relicense third-party bibliographic metadata or material. See SOURCES.md.

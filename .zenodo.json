@@ -1,0 +1,21 @@
+{
+  "title": "An interval certificate for a relativistic elastic ball beyond the Buchdahl compactness value",
+  "version": "1.0.0",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Article and two interval certificates for one fixed relativistic elastic material and central value. Full continuous DEC, nonnegative pressures, five principal-direction wave speeds, and surface 2M/R > 8/9. Numerical exceedance is known from Alho, Natario, Pani and Raposo. No arbitrary-angle causality, stability or physical material viability claim. Lean L1 statement only. Code Apache-2.0; original text and data CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Takimoto, Tatsuhiko",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "relativistic elasticity",
+    "validated numerics",
+    "Buchdahl compactness",
+    "interval arithmetic"
+  ],
+  "publication_date": "2026-11-09"
+}

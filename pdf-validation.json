@@ -1,0 +1,72 @@
+{
+  "status": "REBUILT",
+  "date": "2026-11-06",
+  "pages": 8,
+  "all_pages_viewed": true,
+  "inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "source_sha256": "a8e35d2bd8f4dbfdd967864c59088909a695bbbe3897d919492fa19c568cd3be",
+  "pdf_sha256": "b69877206c0aff42efb316c294e232829a328a9e3445089bae6e71b1cea43fbd",
+  "build": "pdfLaTeX 1.40.26, three passes; Poppler renders at 1100-pixel height",
+  "overfull_boxes": false,
+  "undefined_references": false,
+  "missing_glyphs": false,
+  "visual_findings": "All eight rebuilt pages inspected. No clipping, overlaps, missing glyphs or unresolved references. Equation (7), the six dyadic endpoints and the certificate fingerprint are legible. Extracted text is byte-identical to the input PDF.",
+  "limits": "Not a new independent mathematical review.",
+  "historical_validation": {
+    "status": "REBUILT",
+    "date": "2026-11-06",
+    "pages": 8,
+    "all_pages_viewed": true,
+    "inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source_sha256": "a8e35d2bd8f4dbfdd967864c59088909a695bbbe3897d919492fa19c568cd3be",
+    "pdf_sha256": "04df6993d775f4c3c23ac3bf04623315db7bc1ad47089a7b414e236f78101583",
+    "build": "pdfLaTeX, three passes; Poppler page renders",
+    "overfull_boxes": false,
+    "undefined_references": false,
+    "missing_glyphs": false,
+    "visual_findings": "All eight rendered pages inspected. No clipping, overlaps, missing glyphs or unresolved references; equation (7), its six dyadic endpoints and the article fingerprint fit within the page.",
+    "limits": "Not a new independent mathematical review.",
+    "historical_validation": {
+      "status": "PASS",
+      "date": "2026-11-05",
+      "pages": 8,
+      "all_pages_viewed": true,
+      "inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "source_sha256": "b1d9808ee75656e7c355ba7cb4b3e25e60c50046fae88439432095673439c954",
+      "pdf_sha256": "067feb661bf53f71b02b39afc3d04a8109ef3f72826376f3535043638d11fcc9",
+      "build": "Tectonic -C cached-only; Poppler 100 dpi rendered pages",
+      "overfull_boxes": false,
+      "undefined_references": false,
+      "missing_glyphs": false,
+      "visual_findings": "Eight final pages inspected. Pages 1-4 render identically to the previously viewed final revision; pages 5-8 newly viewed. Equation (7), exact rational B and all six dyadic integers fit and are legible. No clipping, overlaps, undefined references or missing glyphs.",
+      "limits": "Layout inspection and metadata, not a new independent mathematical review."
+    }
+  }
+}

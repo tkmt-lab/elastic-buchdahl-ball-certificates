@@ -1,0 +1,316 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{xurl}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newcommand{\dd}{\delta}
+\newcommand{\pr}{p_{\mathrm r}}
+\newcommand{\pt}{p_{\mathrm t}}
+\title{An interval certificate for a relativistic elastic ball\\beyond the Buchdahl compactness value}
+\author{Tatsuhiko Takimoto}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We certify one regular static elastic ball in a constitutive family of Alho, Nat\'ario, Pani and Raposo. For their green-curve material and the central density variable $\delta_c=8$, two interval certificates enclose the solution from the regular center (a singular point of the reduced system) to the first zero of radial pressure. Throughout the ball, the pressures are nonnegative, the dominant energy condition holds, and all five principal-direction squared wave speeds lie in $[0,1]$. At the surface, $0.91089951<2M/R<0.91180552$, hence $2M/R>8/9$. Numerical exceedance of $8/9$ in this family is already known. The contribution here is a reproducible, global interval certification at one fixed material and central value. The material has negative reference shear modulus; arbitrary-direction causality, stability, and physical material viability are outside the claim.
+\end{abstract}
+
+\section{The material and the certified ball}
+Alho, Nat\'ario, Pani and Raposo established the numerical possibility of elastic balls exceeding the Buchdahl compactness value while satisfying energy and principal-direction wave-speed conditions \cite{ANPR22}. Their subsequent treatment supplies the three-dimensional constitutive law and its wave speeds \cite{ANPR24}. These works provide both the example family and the equations used below. We contribute a certificate for a single member; we make no priority claim for numerical exceedance or for the first rigorous treatment of this family. Our compactness is $2M/R$, twice the convention $C=M/R$ of \cite{ANPR22}; the anisotropic elastic example is outside the perfect-fluid assumptions of Buchdahl's theorem.
+
+Merkushev reports a certificate-supported static equilibrium for a different constitutive law on a constant-scalar Einstein--elastic branch \cite{Merkushev26}. That example has $\delta_c=1/2$ and $M/R\simeq0.11749$, rather than the ACS material and high-compactness ball considered here. We cite it as related certificate work, without independently validating its computations.
+
+We use $G=c=1$ and the normalization $\rho_0=1$. Let $n_1,n_2,n_3>0$ be the principal particle densities. The full constitutive energy is
+\begin{equation}\label{energy}
+ \rho_3=\frac{191}{2}-\frac92(n_1n_2n_3)^2
+       -65\sum_i n_i^2+35\sum_{i<j}n_i^2n_j^2.
+\end{equation}
+The legend inside the lower panel of Fig.~2 of \cite{ANPR22} (p.~3 of arXiv v2) labels the green curve with both $\epsilon+\theta_{\rm old}=-30$ and $\theta_{\rm old}=35$. Thus $\epsilon=-65$. Using $\gamma=2$ and $\rho_0=1$ in their Eq.~(4) gives the spherical restriction of \eqref{energy}. In the notation of \cite{ANPR24}, Eq.~(482), this material has
+\[
+ L=1,\quad \lambda=121,\quad \mu=-60,\quad C_{\rm KS}=35,
+ \qquad \theta_{\rm new}=\gamma C_{\rm KS}/L=70.
+\]
+The conversion is $\theta_{\rm new}=\gamma\theta_{\rm old}/(\gamma-1)$; see Eq.~(338) and footnote~20 of \cite{ANPR24}. At the reference state, \eqref{energy} satisfies $\rho_3(1,1,1)=1$ and $p_i(1,1,1)=0$, with $p_i=n_i\partial_i\rho_3-\rho_3$. These conditions fix the coefficients $191/2$ and $-9/2$ once $-65$ and $35$ are given. There, $\partial_1p_1=1$ and $\partial_2p_1=121$, recovering $\lambda+2\mu=1$ and $\lambda=121$. The central value $\delta_c=8$ is our fixed choice.
+
+In spherical symmetry write $n_1=\dd/u^2$, $n_2=n_3=u$, so that $\eta=u^3$. Define
+\begin{align}
+ a(u)&=-\frac92-\frac{65}{u^4}+\frac{70}{u^2},&
+ b(u)&=\frac{191}{2}-130u^2+35u^4,\\
+ \rho&=a\dd^2+b,&\pr&=a\dd^2-b,\label{pressures}\\
+ q&=\frac u2(a'\dd^2+b'),&\pt&=\pr+q.\nonumber
+\end{align}
+For diagonal stresses the dominant energy condition (DEC) is $\rho\pm\pr\geq0$, $\rho\pm\pt\geq0$.
+
+\begin{theorem}\label{main}
+For the material \eqref{energy} with flat material metric there exists a regular, static, spherically symmetric elastic ball with $\dd(0)=\eta(0)=8$. It has finite radius $R$, the first positive zero of $\pr$, and mass $M=m(R)$. The profiles $(\dd,u,z)$ are $C^1$ in $s=4\pi r^2$ on $[0,4\pi R^2]$ and smooth for $0<r\leq R$. On $0\leq r\leq R$, $1-2m(r)/r>0$ (by its continuous central extension), DEC holds, $\pt>0$, and $\pr\geq0$, with $\pr>0$ for $r<R$. All five principal-direction squared wave speeds lie in $[0,1]$; the two longitudinal ones equal one identically. Moreover,
+\begin{align*}
+ 0.01258970&<R<0.01259407,\\
+ 0.91089951&<2M/R<0.91180552,\\
+ 2M/R-8/9&>0.02201062.
+\end{align*}
+The surface is transverse: $d\pr/dr<0$ there. The ball admits a Schwarzschild vacuum exterior with no surface stress layer.
+\end{theorem}
+
+The bounds refer to the normalization above. Nonzero tangential pressure at the surface is permitted; the vanishing radial traction is the matching condition. The reference modulus $\mu=-60$ makes a physical interpretation as an ordinary stable elastic material inappropriate without further analysis. The theorem concerns the specified mathematical constitutive law, five principal-direction modes, and one central value. It asserts neither arbitrary-angle wave causality nor dynamical stability. The caption of Fig.~2 of \cite{ANPR22} reports the green sequence as radially unstable; the present certificate includes no radial eigenvalue calculation.
+
+\paragraph{Guarantee and reproducibility.}
+The theorem is a computer-assisted result: analytic enclosure arguments below are combined with outward-rounded integer interval computations. Two certificates use different continuation schemes; both are replayed by one integer-interval engine and share the model specification in Sections~1--2. The offline entry point \texttt{verify.py} rechecks every saved tube, including endpoint propagation and continuous inequalities. A Lean file type-checks a statement of the existence claim (level L1); it contains no formal proof of the theorem or checker correctness. The verification history and source provenance are recorded separately in \texttt{VERIFICATION-RECORD.md}.
+
+\paragraph{Code and certificate data.}
+The accompanying packet is version \texttt{1.0.0}, dated 2026-11-09, with code and data at
+\url{https://github.com/tkmt-lab/elastic-buchdahl-ball-certificates/releases/tag/v1.0.0}.
+The packet contains
+both certificates, the interval engine, checkers, model specification
+and \texttt{REPRODUCE.md}. The fixed numerical and checker snapshot
+is identified by \texttt{CERTIFICATE-SHA256SUMS}, whose SHA-256 is
+\nolinkurl{431b5dc0ad9a67b3f17388b0560fbf6e1556431801ddd0ecc0e51d0e82fd15fa}.
+\begin{samepage}
+From the extracted packet directory, on macOS or Linux with
+Python 3.10 or newer and only its standard library, run
+\begin{verbatim}
+python3 -I -B verify.py
+python3 -I -B negative_controls.py
+\end{verbatim}
+\end{samepage}
+The first command verifies both hash inventories and recomputes all
+1592 B tubes and 465 A tubes, including all 4185 flow-derivative
+entries, in a temporary directory. Success is a final JSON record
+with \texttt{status: PASS} and \texttt{full\_replay: true}; partial
+outputs are not success. The second command runs rejection controls
+and must also report \texttt{PASS}. The checks use no network and
+leave the packet unchanged. The default outer budget is 3600 seconds;
+A also has a 3300-second internal cutoff. Slower machines may fail
+that cutoff; \texttt{REPRODUCE.md} records this limitation.
+
+\section{Equations and wave speeds}
+Let $s=4\pi r^2$, $z=m/(4\pi r^3)$ and $D=1-2sz$. Set
+\[
+ G=\frac{\dd}{u^2\sqrt D}-u,\qquad p_d=2a\dd,\qquad p_u=a'\dd^2-b'.
+\]
+The static equations (mass balance, the material equation, and anisotropic hydrostatic equilibrium) become
+\begin{equation}\label{ode}
+ s\frac{d}{ds}\begin{pmatrix}\dd\\u\\z\end{pmatrix}
+ =\begin{pmatrix}
+ [q-p_uG/2-s(\rho+\pr)(z+\pr)/(2D)]/p_d\\
+ G/2\\(\rho-3z)/2
+ \end{pmatrix}.
+\end{equation}
+For example $d\pr/dr=-(\rho+\pr)(m+4\pi r^3\pr)/(r(r-2m))+2q/r$, together with $d\pr=p_d\,d\dd+p_u\,du$, gives the first line. The central values are
+\[
+ (\dd,u,z)=(8,2,1415/6),\qquad \rho_c=1415/2,
+ \qquad \pr(0)=\pt(0)=873/2.
+\]
+We use $x=\rho_c s$ and $Y=(\dd/8,u/2,z/(1415/6))$, so that \eqref{ode} reads $xY'=f(x,Y)$ and $Y(0)=(1,1,1)$.
+
+For the three transverse speeds put
+\begin{align*}
+ D_T&=-9\dd^2/2-65u^2+35(u^4+\dd^2/u^2),\\
+ D_L&=a\dd^2,\qquad K=-65u^2+35u^4.
+\end{align*}
+In the index convention of \cite{ANPR24}, Appendix~A, Eq.~(423), $c_{\mathrm T ij}$ propagates along principal direction $i$ and is polarized along $j$. For $i\ne j$ and $n_i\ne n_j$,
+\begin{equation}\label{generalwave}
+ c_{\mathrm T ij}^2=\frac{n_j^2}{\rho+p_j}
+              \frac{p_j-p_i}{n_j^2-n_i^2}.
+\end{equation}
+Let $r,t,t'$ denote the radial and two orthogonal tangential directions. The five squared speeds specialize to
+\begin{align}\label{waves}
+ c_{\mathrm L r}^2=c_{\mathrm L t}^2&=1,\nonumber\\
+ c_{\mathrm T rt}^2=\frac K{D_T},\qquad
+ c_{\mathrm T tr}^2&=\left(\frac{\dd}{u^3}\right)^2\frac K{D_L},\qquad
+ c_{\mathrm T tt'}^2=\frac{-65u^2+35\dd^2/u^2}{D_T}.
+\end{align}
+The three transverse entries are respectively radial propagation with tangential polarization ($c_{\mathrm T}$), tangential propagation with radial polarization ($\tilde c_{\mathrm T}$), and tangential propagation with orthogonal tangential polarization ($\tilde c_{\mathrm{TT}}$). These agree with Eqs.~(335), (343)--(345), and (487) of \cite{ANPR24}.
+
+For \eqref{energy}, direct differentiation gives
+\[
+ \frac{p_2-p_3}{n_2^2-n_3^2}=-130+70n_1^2.
+\]
+This polynomial identity before division supplies the continuous value at $n_2=n_3$ in \eqref{generalwave}; cyclic permutations give the other cancellations. Thus the full three-dimensional law fixes the tangential degeneracy. Finally, \eqref{energy} is quadratic in each $n_i$, so the longitudinal quotient $n_i\rho_{3,ii}/\rho_{3,i}$ equals one. Its denominators satisfy $\rho+p_r=2D_L>0$ and $\rho+p_t=2D_T>0$ on the certified ball.
+
+\section{Enclosures from the center to the surface}
+All intervals in the independent checker have endpoints $k2^{-192}$ with integer $k$. Addition, multiplication and division use integer floor and ceiling; square roots use integer square root and an outward upper endpoint. Exact rational arithmetic determines the central Taylor coefficients. Floating-point numbers are used only for readable output.
+
+\subsection{Regular center}
+The linearization at the center is
+\[
+ M=f_Y(0,\mathbf1)=\begin{pmatrix}
+ 0&0&0\\1/2&-3/2&0\\3432/1415&0&-3/2
+ \end{pmatrix}.
+\]
+The coefficients of $P(x)=\sum_{j=0}^7c_jx^j$ are determined recursively by matching $xP'=f(x,P)$ through degree seven: at order $j\geq1$ one solves $(jI-M)c_j$ against already known terms. Its eigenvalues are $j$ and $j+3/2$ (the latter twice), so it is invertible. Let $x_0=1415/2097152$.
+
+\begin{lemma}\label{center}
+On $[0,x_0]$ there is a solution $Y=P+e$ with
+\[
+ \|e(x)\|_\infty\leq Bx^8,\qquad
+ \|e'(x)\|_\infty\leq(\mathcal L B+\mathcal R)x^7,
+\]
+where $B<0.002249$, $\mathcal L<3.928$, and
+$\mathcal R+\mathcal L B<8B$. Its pressures, DEC expressions and transverse speeds satisfy the strict inequalities needed in Theorem~\ref{main} throughout the center interval.
+\end{lemma}
+\begin{proof}
+Interval jets bound the eighth derivative coefficient of $f(x,P(x))$ on $[0,x_0]$ by $\mathcal R$. The lower coefficients of $f(x,P)-xP'$ vanish exactly. Hence the defect has norm at most $\mathcal R x^8$. On a box containing $P(x)+[-Bx^8,Bx^8]^3$, the checked positivity of $u,D,p_d$ makes $f$ smooth, and interval differentiation bounds $\|f_Y\|_\infty$ by $\mathcal L$. The checker verifies $\mathcal L<8$ and $\mathcal R+\mathcal L B<8B$.
+
+In $C([0,x_0],\mathbb R^3)$ with the supremum norm, for $\|v\|_\infty\leq B$ define
+\[
+ T(v)(x)=\int_0^1 t^7
+ \frac{f(tx,P(tx)+(tx)^8v(tx))-txP'(tx)}{(tx)^8}\,dt,
+\]
+For $tx>0$, the quotient has norm at most $\mathcal R+\mathcal L B$. Splitting off the defect and writing the remaining difference as an integral of $f_Y$ shows that its limit at $tx=0$ exists: $f$ is smooth, the defect vanishes through degree seven, and $v$ is continuous. Dominated convergence therefore extends $T(v)$ continuously to $x=0$. The same bound shows that $T$ maps the closed ball into itself, with contraction factor at most $\mathcal L/8<1$. Its fixed point gives $e=x^8v$ and solves the equation. The equation itself gives the derivative estimate. Interval evaluation on the containing box proves the stated inequalities. Since $x$ is proportional to $r^2$, the profiles extend regularly to $r=0$ and $m(r)=4\pi r^3z(r)$. The lapse follows by integrating the regular static metric equation.
+\end{proof}
+
+\subsection{Certificate B: continuation with 1592 tubes}
+The first step starts at exactly $x_0=1415/2097152$. Before any
+continuation, the checker recomputes Lemma~\ref{center}'s endpoint
+enclosure and verifies, in the same normalized $Y$ coordinates,
+\begin{equation}\label{connectionB}
+ P(x_0)+[-Bx_0^8,Bx_0^8]^3
+ \ \subseteq\ Y_0^{(\mathrm B,\mathrm{first})}.
+\end{equation}
+The left side is enclosed with outward rounding. In
+\texttt{certificates/check\_own\_tubes.py}, the first iteration
+checks both \texttt{rx == x} with the recomputed central $x$, and
+the componentwise containment of that endpoint in \texttt{Y0}.
+
+For a direct endpoint comparison, the actual constant in
+Lemma~\ref{center} and~\eqref{connectionB} is the exact rational
+\[
+ B=\frac{4105539116966116301611603230576153416148913319284471298}{1826136997047800451361347484870651835127375773309594134999}.
+\]
+The first stored box is exactly
+\[
+ Y_0^{(\mathrm B,\mathrm{first})}
+ =\prod_{i=1}^3[\ell_i2^{-192},u_i2^{-192}],
+\]
+where the six integers are
+\[
+\begin{aligned}
+ \ell_1&=6276570335106181913517466057719846460862770422965530137157,\\
+ u_1&=6276570335106181913517466058932225026489135642224260258540\\
+ \ell_2&=6277277832346553162745121893689982896804740872113266634836,\\
+ u_2&=6277277832346553162745121894902361462431106091371996756219\\
+ \ell_3&=6276586198403885341642190864945766117582859531230076657040,\\
+ u_3&=6276586198403885341642190866158144683209224750488806778423.
+\end{aligned}
+\]
+These are the \texttt{Y0} entries of the first row of
+\texttt{certificates/stage1-tubes.jsonl}, without decimal rounding.
+Using this $B$, the coefficient recurrence in Section~3.1 and
+$x_0=1415/2097152$ gives, componentwise,
+\[
+ \ell_i2^{-192}\leq P_i(x_0)-Bx_0^8
+ \leq P_i(x_0)+Bx_0^8\leq u_i2^{-192}\qquad(i=1,2,3).
+\]
+Thus~\eqref{connectionB} is an exact rational comparison.
+The decimal $0.002249$ is only an upper bound for $B$; its larger
+error box is not the box being compared with these stored endpoints.
+
+For each interval $[x,x+h]$ the certificate supplies an initial box $Y_0$, a rectangular tube $T$, and an endpoint box $Y_1$. The checker verifies positive denominators and the enclosure
+\[
+ Y_0+[0,h]\,f([x,x+h],T)/[x,x+h]\ \subseteq\ T.
+\]
+The positive $u,D,p_d$ on the tube make $f/x$ smooth on $[x,x+h]\times T$. The existence enclosure and Picard--Lindel\"of uniqueness therefore give, for each initial point in $Y_0$, a unique solution on the step staying in $T$. The verifier also checks that $Y_0$ is strictly inside $T$.
+
+Endpoint propagation uses a degree-six Taylor polynomial about the midpoint of $Y_0$, with its degree-seven remainder bounded on $T$. To transport the initial radius, let $J$ be the Jacobian of $f/x$, and let $C$ have diagonal entries bounding $J_{ii}$ above and off-diagonal entries bounding $|J_{ij}|$ above. Because $T$ is a box, the mean value theorem gives $e'=\overline J e$ with $\overline J$ in the interval Jacobian. Thus
+\[
+ D^+|e_i|\leq C_{ii}|e_i|+\sum_{j\ne i}C_{ij}|e_j|.
+\]
+Here $D^+$ denotes the upper Dini derivative. Metzler comparison bounds the componentwise error by $\exp(hC)$ times the initial radius. Choose $\sigma\geq0$ such that $C+\sigma I$ is entrywise nonnegative. For $A=h(C+\sigma I)$, the checker verifies $r=\|A\|_\infty<1$ and bounds the exponential by its degree-sixteen sum plus, in each entry,
+\[
+ \frac{r^{17}}{17!}\frac1{1-r/18}.
+\]
+The tail estimate uses $(A^k)_{ij}\leq\|A\|_\infty^k$ for entrywise nonnegative $A$. The factor $e^{-h\sigma}$ is bounded above by the reciprocal of the positive degree-sixteen sum for $e^{h\sigma}$. The computed endpoint enclosure must lie in $Y_1$, and the next initial box must contain $Y_1$. These checks link the entire solution to Lemma~\ref{center}.
+
+\subsection{Certificate A: continuation with 465 tubes}
+A second continuation uses degree-twelve Taylor flow, degree-thirteen remainder, and a full interval derivative of the flow with respect to its three initial coordinates. In local coordinates
+\[
+ v=\left(Y_1-1,\ Y_2-1-(Y_1-1)/3,\
+ Y_3-1-\frac{2288}{1415}(Y_1-1)\right),
+\]
+the vector field is algebraically rearranged using $b'=-u^6a'$ and
+$1/\sqrt D-1=2sz/(\sqrt D(1+\sqrt D))$. This controls cancellation near the center. Its central polynomial through degree four agrees with the corresponding coefficients of $P$. Inclusion of the endpoint from Lemma~\ref{center}, in local coordinates, in A's first initial box joins A to the same solution. The separate degree-four center contraction is an additional consistency check.
+
+Write $dv/dx=F(x,v)$ for this local vector field. On every A step the
+checker verifies positive denominators and the same Picard
+self-inclusion as for B, now in local coordinates:
+\[
+ \mathcal V_0+[0,h]F([x,x+h],T_v)\subseteq T_v.
+\]
+Thus every initial point of the entire box $\mathcal V_0$ has its solution
+through the step inside $T_v$, where the vector field is smooth.
+This condition is checked by \texttt{replay} in
+\texttt{certificates/replay\_producer.py}; evaluating a remainder
+on a proposed tube alone is not the existence enclosure.
+
+Let $\varphi(t;\tau,v)$ be the nonautonomous local flow with
+$\varphi(0;\tau,v)=v$, and define
+\[
+ c_{13}(\tau,v)=\frac1{13!}
+       \left.\partial_t^{13}\varphi(t;\tau,v)\right|_{t=0}.
+\]
+For any initial $v_0\in\mathcal V_0$, put
+$V(t)=D_{v_0}\varphi(t;x,v_0)$, so $V(0)=I$.
+If $\widehat J$ bounds $F_v$ on $[x,x+h]\times T_v$ and
+$\ell=h\|\widehat J\|_\infty<1$, then throughout $0\leq t\leq h$
+$V(t)$ lies entrywise in
+$I+[-\ell/(1-\ell),\ell/(1-\ell)]$.
+The integral form of the degree-twelve Taylor remainder is
+\[
+ 13\int_0^h(h-t)^{12}
+ c_{13}(x+t,\varphi(t;x,v_0))\,dt.
+\]
+Differentiation with respect to $v_0$ therefore encloses its
+derivative by $h^{13}(D_vc_{13})V$, with $D_vc_{13}$ evaluated
+over $[x,x+h]\times T_v$ and $V$ over the variational enclosure.
+No initial-data-dependent Lagrange point is differentiated.
+Applying the resulting flow derivative to the initial box about its
+midpoint, and adding the midpoint-flow enclosure, yields the next
+endpoint box. The checker verifies all nine derivative entries for
+each of the 465 tubes, as well as the center, remainder and endpoint
+inclusions. The two constructions therefore certify a common regular
+solution, although they have different meshes and enclosing widths.
+
+\subsection{Continuous conditions and first zero}
+On the center interval and every continuation tube, the checker verifies
+\[
+ \dd,u,D,p_d,D_T,D_L,\pt,\rho-\pr,\rho+\pr,\rho-\pt,\rho+\pt>0
+\]
+and that all three transverse quantities in \eqref{waves} lie strictly between zero and one. The two longitudinal quantities equal one identically.
+All intermediate endpoints have $\pr>0$. Wherever a tube evaluation of $\pr$ includes zero, interval differentiation gives $d\pr/dx<0$; thus positivity at the right endpoint also proves positivity throughout that earlier tube. The last endpoint has negative radial pressure, while its predecessor has positive pressure. Consequently the first zero is unique in this crossing tube and is transverse. The part after that zero is used only to bracket the surface.
+
+The 1592-tube certificate gives the exact bracket
+\[
+ \frac{2955271}{2097152}<x_R<\frac{2957319}{2097152}.
+\]
+On the crossing tube it bounds $2xz/\rho_c$ strictly between $0.91089951$ and $0.91180552$. The displayed radius bounds follow from $R=\sqrt{x_R/(4\pi\rho_c)}$ using the Machin identity $\pi=16\arctan(1/5)-4\arctan(1/239)$ and alternating-series rational bounds. These are outward decimal bounds, not rounded estimates. This proves the quantitative assertions of Theorem~\ref{main}.
+
+Finally the positive $D$ and smooth profiles give a regular interior static metric. Writing $g_{tt}=-e^{2\Phi}$, set its boundary value to the Schwarzschild value and integrate
+\[
+ \frac{d\Phi}{dr}=\frac{m+4\pi r^3\pr}{r(r-2m)}
+\]
+inward. The right-hand side is regular at the center. Mass balance and TOV imply the remaining Einstein equation by the contracted Bianchi identity. The condition $\pr(R)=0$ matches the first and second fundamental forms to the exterior of mass $M$, so no thin surface layer is required. The positive surface density $\rho(R)=\rho(R)-\pr(R)>0$ may jump to zero outside; this does not obstruct that matching. Together with the preceding inequalities this completes the proof.
+
+\paragraph{Use of AI tools.}
+Codex and Claude were used as tools for implementation, calculation, source comparison and writing the manuscript and verification materials. The author is responsible for the claims and presentation.
+
+\begin{thebibliography}{9}
+\bibitem{ANPR22} A. Alho, J. Nat\'ario, P. Pani and G. Raposo,
+\emph{Compactness bounds in general relativity},
+Physical Review D \textbf{106} (2022), L041502.
+\href{https://doi.org/10.1103/PhysRevD.106.L041502}{doi:10.1103/PhysRevD.106.L041502}.
+Constitutive comparison: \href{https://arxiv.org/abs/2202.00043v2}{arXiv:2202.00043v2}.
+\bibitem{ANPR24} A. Alho, J. Nat\'ario, P. Pani and G. Raposo,
+\emph{Spherically symmetric elastic bodies in general relativity},
+Classical and Quantum Gravity \textbf{41} (2024), 073002.
+\href{https://doi.org/10.1088/1361-6382/ad1e4b}{doi:10.1088/1361-6382/ad1e4b}.
+Equation numbering: \href{https://arxiv.org/abs/2307.03146v2}{arXiv:2307.03146v2}.
+\bibitem{Merkushev26} Y. Merkushev,
+\emph{Static Causal and Hyperbolic Certificates for a Relativistic Elastic Sector of Causal-Boundary Disformal Gravity},
+Zenodo preprint (2026).
+\href{https://doi.org/10.5281/zenodo.20836296}{doi:10.5281/zenodo.20836296}.
+\end{thebibliography}
+\end{document}

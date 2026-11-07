@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "status": "release-1.0.0",
+  "material": {
+    "full_energy": "191/2-(9/2)*(n1*n2*n3)^2-65*sum(ni^2)+35*sum_{i<j}(ni^2*nj^2)",
+    "delta_c": "8",
+    "theta_old": "35",
+    "theta_new": "70",
+    "mu": "-60"
+  },
+  "claims": [
+    {
+      "id": "existence",
+      "statement": "Regular finite static spherical ball with first transverse zero of radial pressure",
+      "evidence": [
+        "paper.tex",
+        "certificates/check_own_tubes.py",
+        "certificates/replay_producer.py"
+      ]
+    },
+    {
+      "id": "continuous-conditions",
+      "statement": "Nonnegative pressures, full DEC, five principal squared speeds in [0,1] on the entire ball",
+      "longitudinal_squared_speeds": [
+        "1",
+        "1"
+      ],
+      "evidence": [
+        "spec.json",
+        "certificates/independent.py",
+        "certificates/check_own_tubes.py",
+        "certificates/replay_producer.py"
+      ]
+    },
+    {
+      "id": "surface-bounds",
+      "radius_open_decimal": [
+        "0.01258970",
+        "0.01259407"
+      ],
+      "compactness_open_decimal": [
+        "0.91089951",
+        "0.91180552"
+      ],
+      "margin_above_8_over_9_strict_lower": "0.02201062",
+      "exact_scaled_interval_bits": 192,
+      "exact_radius": [
+        "79026857931134814624941537044545837540863679497258282519",
+        "79054235957515363554190307791373718795222992906035453829"
+      ],
+      "exact_compactness": [
+        "5717808906350715985543137718958562420101271812099061410684",
+        "5723495950880999165060356279379044900739568344340751531875"
+      ],
+      "exact_root_x": [
+        "2955271/2097152",
+        "2957319/2097152"
+      ],
+      "evidence": [
+        "certificates/own-tubes-checked.json",
+        "verify.py"
+      ]
+    }
+  ],
+  "certificate_sizes": {
+    "A": 465,
+    "A_C1_entries": 4185,
+    "B": 1592
+  },
+  "verification": "analytic enclosure lemmas plus complete integer-interval replay",
+  "Lean": "L1 type-checked proposition only; no formal proof",
+  "excluded": [
+    "arbitrary-direction causality",
+    "dynamical stability",
+    "physical material viability",
+    "general materials or central values",
+    "priority for numerical Buchdahl exceedance",
+    "priority for first rigorous treatment",
+    "external peer review"
+  ]
+}

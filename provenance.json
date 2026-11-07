@@ -1,0 +1,116 @@
+{
+  "source_commit": "119c2d496d601fc4676089bdd674da29197c5ff5",
+  "independent_stage1_frozen_commit": "0b2ea8a23",
+  "certificate_sources": [
+    {
+      "source": "check-1/independent.py",
+      "copy": "publication-2026-10-27/packet/certificates/independent.py",
+      "sha256": "3e5fd84b3b8dea349fa2d27d88bef27e3b35b54ce86c8639d512333b323bdf34",
+      "bytes": 11455
+    },
+    {
+      "source": "check-1/check_own_tubes.py",
+      "copy": "publication-2026-10-27/packet/certificates/check_own_tubes.py",
+      "sha256": "dbe0616ae56620f7da168515ee0d57d8bc16549e2a68168089ea4082b0e19cc4",
+      "bytes": 3593
+    },
+    {
+      "source": "check-1/replay_producer.py",
+      "copy": "publication-2026-10-27/packet/certificates/replay_producer.py",
+      "sha256": "2e274ef1e29dbd5e69d280ab9dcf97c45083ec3d234c474a00f1dfef364de7c3",
+      "bytes": 8272
+    },
+    {
+      "source": "check-1/stage1-tubes.jsonl",
+      "copy": "publication-2026-10-27/packet/certificates/stage1-tubes.jsonl",
+      "sha256": "ed037bebaf16de56fddf1558f20088351613ad92d00ab23c48546b126ecf8d58",
+      "bytes": 2390982
+    },
+    {
+      "source": "check-1/center-independent.json",
+      "copy": "publication-2026-10-27/packet/certificates/center-independent.json",
+      "sha256": "b3f47ecec6a28457a37174ca399600d062ddc93447e6698431517b7ffd1f4683",
+      "bytes": 6303
+    },
+    {
+      "source": "check-1/own-tubes-checked.json",
+      "copy": "publication-2026-10-27/packet/certificates/own-tubes-checked.json",
+      "sha256": "abaaff448d78dd34bf2928e9e62378035f50f4b1987acc78817df88212545133",
+      "bytes": 1816
+    },
+    {
+      "source": "check-1/producer-replay.json",
+      "copy": "publication-2026-10-27/packet/certificates/producer-replay.json",
+      "sha256": "0066e5c9d0c16c15cb1dbdbdb5990a300ca1f20b726a228501f9b790f70b79c8",
+      "bytes": 112666
+    },
+    {
+      "source": "check-1/stage2-inputs/inputs-center.json",
+      "copy": "publication-2026-10-27/packet/certificates/stage2-inputs/inputs-center.json",
+      "sha256": "a113605db7cdb0bc1ef40a52921177d89b3a9e841894dd0e460076549fc522f3",
+      "bytes": 14707
+    },
+    {
+      "source": "check-1/stage2-inputs/pilot-steps.jsonl",
+      "copy": "publication-2026-10-27/packet/certificates/stage2-inputs/pilot-steps.jsonl",
+      "sha256": "552f65fb335cc2595fa400be6604c15f4574b11faa268170c14766eb69f0268f",
+      "bytes": 9559828
+    },
+    {
+      "source": "next1/spec.json",
+      "copy": "publication-2026-10-27/packet/spec.json",
+      "sha256": "4a8b1029675d073fa0122afa0605af620a4e20a116648c9748c04d4ef8aee093",
+      "bytes": 2449
+    }
+  ],
+  "source_versions": [
+    "arXiv:2202.00043v2",
+    "arXiv:2307.03146v2"
+  ],
+  "packet_version": "1.0.0",
+  "release_status": "release-1.0.0",
+  "new_agents_launched_during_preparation": false,
+  "final_manuscript_review": "2026-10-27: Fable MINOR static review received; scoped responses applied. This was not external human peer review or validation of the complete theorem.",
+  "final_literature_review": "N3 limited-scope literature review received; Merkushev citation and acknowledgment placement addressed",
+  "review_input_commit": "330ebc4c4665f81d7da330bcf3efdd5395078dea",
+  "spec_editorial_transform": {
+    "baseline": "7a8c7099a524ef217e6e83f1490ce8127fab76c6",
+    "removed_fields": [
+      "candidate",
+      "pool_display_number",
+      "status",
+      "new_study_id",
+      "study",
+      "literal_eq167_safe_to_copy"
+    ],
+    "scientific_fields_unchanged": true,
+    "obsolete_flag": "On 2026-10-27, literal_eq167_safe_to_copy, an unused source-equation warning, was removed from the distributable model. No equation or certificate depends on that key."
+  },
+  "blind_revision": {
+    "date": "2026-11-05",
+    "input_commit": "bbd1ce9e8",
+    "blind_report_sha256": "3ef932113928706c193cc7522ce9dd6334c00f0b5ecf3d1d45ec0ae3d4f771d0",
+    "scheduled_release_url": "https://github.com/tkmt-lab/elastic-buchdahl-ball-certificates/releases/tag/v1.0.0",
+    "scheduled_release_status": "pending-not-validated-as-live",
+    "certificate_identity_sha256": "431b5dc0ad9a67b3f17388b0560fbf6e1556431801ddd0ecc0e51d0e82fd15fa",
+    "numerical_checkers_and_witnesses_unchanged": true,
+    "fresh_independent_review": false,
+    "publication_operation": false,
+    "historical_record_date": "2026-11-05"
+  },
+  "eq7_revision": {
+    "date": "2026-11-05",
+    "input_commit": "f9c92dea9",
+    "copied_first_box_exactly": true,
+    "actual_rational_B_printed": true,
+    "fixed_scientific_index_unchanged": true,
+    "new_independent_review": false
+  },
+  "publication_date": "2026-11-09",
+  "release_operations_performed_by_this_revision": false,
+  "editorial_revision_2026_11_06": {
+    "scope": "Reader-facing review history clarified; scientific inputs unchanged; article PDF rebuilt.",
+    "live_download_or_DOI_checked": false,
+    "new_independent_review": false
+  }
+}

@@ -1,0 +1,19 @@
+# Response to the blind manuscript review, 5 November 2026
+
+Current edition: 1.0.0, dated 2026-11-09. The following records describe revision history as of 2026-11-05; publication operations and live download availability were not checked by those reviews.
+
+On 2026-11-05, version 1.0.0 was a local packet. The blind review independently checked the equations, the center enclosure and consistency with numerical integrations. It did not read or replay the continuation certificates; its report was “corrections needed”, rather than an unconditional PASS of the full theorem. The input report SHA-256 is `3ef932113928706c193cc7522ce9dd6334c00f0b5ecf3d1d45ec0ae3d4f771d0`.
+
+| Request | Disposition |
+|---|---|
+| R1: retrieval, version, fixed snapshot, commands and success condition | Adopted. On 2026-11-05, the article and both READMEs gave the scheduled v1.0.0 URL and explicitly described its then-pending availability. The article prints the SHA-256 of CERTIFICATE-SHA256SUMS, which freezes the thirteen numerical/checker inputs. Both check commands, platform/Python requirements, final success fields, no-network behavior and cutoff limitations are stated. REPRODUCE.md supplies the detailed path. verify.py validates both the complete manifest and the frozen identity. |
+| R1: actual permanent archive / DOI availability | Not checked by the 2026-11-05 review: the local correction did not publish a release or assign a DOI. That review did not establish live retrieval, a matching downloadable version or DOI availability. |
+| R2: center to B's first box | Adopted. Section 3.2 explicitly sets the first time to x₀ and states P(x₀)+[-Bx₀⁸,Bx₀⁸]³ ⊆ Y0^(B,first), with outward rounding and checker location. The preserved checker's first iteration already verifies exact time and componentwise inclusion. |
+| R3: A's all-initial-points tube condition | Adopted. Section 3.3 writes the local Picard self-inclusion and states that the entire initial box stays in that tube. This is the existing replay() check, before remainder evaluation. |
+| R3: c13, evaluation range and V | Adopted. Section 3.3 defines the nonautonomous local flow φ(t;τ,v), c13(τ,v) as its normalized time derivative at t=0, and V(t) as the derivative from the initial point to that time. The integral remainder and its derivative are displayed, with D_v c13 evaluated over the full time/tube product and V over its verified enclosure. |
+
+There are no rejected mathematical/presentation suggestions. The 2026-11-05 review did not check public download or permanent-archive availability. The claims, two witness meshes, original numerical checker files, exact bounds, material and five-principal-direction scope are unchanged. The added negative control rejects an altered scientific input even after refreshing the full manifest. Local full replay and PDF checks are recorded in the revision report and VERIFICATION-RECORD.md. This author-side revision is not a new blind review, human peer review or formal proof.
+
+## Follow-up on equation (7), 5 November 2026
+
+The follow-up blind review accepted the prepublication reproduction route (R1) and the analytic A argument (R3), but could not compare equation (7) without the right-hand box endpoints. Adopted: Section 3.2 now prints all six exact integers for the first Y0 at scale 2^-192, copied from the first certificate row, and the actual rational B used by the center lemma. The recurrence already printed in Section 3.1 reconstructs P exactly; the componentwise rational inequalities now have all their inputs in the article. The larger box obtained from the rounded upper bound B=0.002249 is explicitly distinguished and is not claimed to fit. The optional clarification dv/dx=F(x,v) is also adopted. No requested point is rejected; the original center proof, numerical witnesses, algorithms and fixed thirteen-file identity are unchanged. This is an author-side correction and comparison, not a new blind approval.

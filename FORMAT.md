@@ -1,0 +1,9 @@
+# Certificate formats
+
+`spec.json` fixes the model and coordinates. Laboratory labels have been moved to `provenance.json`; an unused source-equation warning was removed on 2026-10-27. All constitutive parameters, equations, numerical inputs and claim fields are unchanged. Source hashes in provenance identify the baseline inputs; MANIFEST.sha256 identifies the current packet. For certificate B, integer endpoint pair `[lo,hi]` means `[lo/2^192,hi/2^192]`. Rational strings are exact fractions. Decimal `approx` fields are for display only.
+
+B: `stage1-tubes.jsonl` has 1592 JSON rows with `x`, `h`, `Y0`, `tube`, `Y1`. Coordinates are Y=(δ/8,u/2,z/(1415/6)), x=(1415/2)4πr². `center-independent.json` is a saved degree-seven center calculation; the checker recomputes it rather than trusting it. `own-tubes-checked.json` records exact root, radius and compactness intervals from the full saved-tube replay. Its recorded timings and approximate minima are historical and are not replay success criteria.
+
+A: `stage2-inputs/pilot-steps.jsonl` has 465 rows. The local coordinates are v=(Y1−1,Y2−1−(Y1−1)/3,Y3−1−2288(Y1−1)/1415). Entries use rational `lo`/`hi` strings. Each row contains an initial box, Picard tube, variational tube, midpoint flow, 3×3 flow derivative enclosure and endpoint box. `inputs-center.json` holds the degree-four center certificate. The replay independently recomputes the center comparison and all flow enclosures. `producer-replay.json` is its saved result; the wrapper requires a new result from the scratch replay.
+
+The two longitudinal squared speeds are the exact constant 1. Three rational transverse speeds are explicitly evaluated on every tube. Radial-pressure negativity in the final endpoint is a surface-bracketing device: the physical interior ends at the first zero. The remaining inequalities are checked across the whole final tube.

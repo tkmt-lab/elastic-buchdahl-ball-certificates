@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the article and acknowledge the original constitutive sources."
+title: "An interval certificate for a relativistic elastic ball beyond the Buchdahl compactness value"
+type: article
+version: 1.0.0
+date-released: 2026-11-09
+repository-code: https://github.com/tkmt-lab/elastic-buchdahl-ball-certificates
+authors:
+  - family-names: Takimoto
+    given-names: Tatsuhiko
+license: CC-BY-4.0
+abstract: "Interval certificates for one static elastic ball with DEC, nonnegative pressures, five principal-direction wave speeds, and 2M/R > 8/9. No arbitrary-direction causality, stability or physical viability claim."
